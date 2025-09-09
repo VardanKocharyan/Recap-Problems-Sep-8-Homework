@@ -167,34 +167,34 @@ void Reverse_char_arr(char *s) {
 	}
 }
 
-int polindrom(int n) {
+int polindrom(long long int n) {
 	printf("	POLINDROM\n");
-		int m = 0;
+		long long int m = 0;
 		while(n > m) {
 
 				m = m * 10 + n % 10;
 				if((n / 10 == m) || (n == m)) return 0;
 				n /= 10;
-				printf("%d, %d\n", n, m);
+				printf("%lld, %lld\n", n, m);
 		}
 		
 		return 1;
 }
 
-int reverse_number(unsigned int n) {
+int reverse_number(long long int n) {
 	printf("	REVERSE\n");
-		int res = 0;
+		long long int res = 0;
 		while(n) {
 				res = res * 10 + n % 10;
 				n /= 10;
 		}
-		printf("res = %d\n", res);
+		printf("res = %lld\n", res);
 		return res;
 }
 
-int reverse_and_add(int n) {
+int reverse_and_add(long long int n) {
 		int count = 0;
-		if(n < 0) return -1;
+		if(n < 0 || (n % 10 == 0 && n != 0)) return -1;
 
 		while(polindrom(n)) {
 			n += reverse_number(n);	

@@ -18,8 +18,8 @@ int Fuctory(int);
 int sum_of_digit(int);
 float power(int, int);
 void Reverse_char_arr(char *);
-int reverse_and_add(int);
-int polindrom(int);
-int reverse_number(unsigned int);
+int reverse_and_add(long long int);
+int polindrom(long long int);
+int reverse_number(long long int);
 #endif
 

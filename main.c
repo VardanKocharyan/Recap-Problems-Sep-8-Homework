@@ -155,10 +155,10 @@ int main(void) {
 */
 
 	printf("	reverse-and-add.\n");
-	int olleh = 0;
+	long long olleh = 0;
 	do{
 		printf("Enter the number(>0): ");
-		scanf("%d", &olleh);
+		scanf("%lld", &olleh);
 	}while(olleh < 0);
 	printf("count = %d\n\n", reverse_and_add(olleh));
 
